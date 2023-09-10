@@ -12,11 +12,6 @@ The only difference is for build I use cmake instead of makefile.
 
 ## Function
 
-### AUXILIARY PART
-- ft_putchar
-- ft_putstr
-- ft_putnbr
-
 ### OBLIGATORY PART
 - ft_memset
 - ft_bzero
@@ -46,3 +41,8 @@ The only difference is for build I use cmake instead of makefile.
 - ft_isprint
 - ft_toupper
 - ft_tolower
+
+### OPTIONNAL PART
+- ft_putchar
+- ft_putstr
+- ft_putnbr
