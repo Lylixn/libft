@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lguerra- <lylian.gr@protonmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/10 22:38:24 by lguerra-          #+#    #+#             */
-/*   Updated: 2023/09/10 22:38:24 by lguerra-         ###   ########.fr       */
+/*   Created: 2023/09/10 22:54:27 by lguerra-          #+#    #+#             */
+/*   Updated: 2023/09/10 22:54:49 by lguerra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *dest, char *src, t_size_t nb)
+char	*ft_strchr(char *str, int searched_char)
 {
-	t_size_t	i;
-	t_size_t	j;
-
-	i = 0;
-	j = 0;
-	while (dest[i])
-		i++;
-	while (src[j] && nb > 0)
+	while (*str)
 	{
-		dest[i++] = src[j++];
-		nb--;
+		if (*str == searched_char)
+			return (str);
+		str++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	if (*str == searched_char)
+		return (str);
+	return (NULL);
 }

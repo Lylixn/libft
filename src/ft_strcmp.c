@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lguerra- <lylian.gr@protonmail.com>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/10 22:38:24 by lguerra-          #+#    #+#             */
-/*   Updated: 2023/09/10 22:38:24 by lguerra-         ###   ########.fr       */
+/*   Created: 2023/09/10 22:58:37 by lguerra-          #+#    #+#             */
+/*   Updated: 2023/09/10 22:58:55 by lguerra-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *dest, char *src, t_size_t nb)
+int	ft_strcmp(char *s1, char *s2)
 {
 	t_size_t	i;
-	t_size_t	j;
 
 	i = 0;
-	j = 0;
-	while (dest[i])
+	while (s1[i] && s2[i] && s1[i] == s2[i])
 		i++;
-	while (src[j] && nb > 0)
-	{
-		dest[i++] = src[j++];
-		nb--;
-	}
-	dest[i] = '\0';
-	return (dest);
+	return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
 }
