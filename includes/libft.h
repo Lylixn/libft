@@ -46,11 +46,11 @@ char		*ft_strnstr(char *str, char *to_find, t_size_t len);
 int			ft_strcmp(char *s1, char *s2);
 int			ft_strncmp(char *s1, char *s2, t_size_t n);
 int			ft_atoi(char *str);
-int			ft_isalpha(int number);
-int			ft_isdigit(int number);
-int			ft_isalnum(int number);
-int			ft_isascii(int number);
-int			ft_isprint(int number);
+int			ft_isalpha(int character);
+int			ft_isdigit(int character);
+int			ft_isalnum(int character);
+int			ft_isascii(int character);
+int			ft_isprint(int character);
 int			ft_toupper(int number);
 int			ft_tolower(int number);
 
