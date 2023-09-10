@@ -22,16 +22,16 @@ void		ft_putchar(char c);
 void		ft_putstr(char *str);
 void		ft_putnbr(int nb);
 
-void		*ft_memset( void *pointer, int value, t_size_t count );
-void		ft_bzero( void *pointer, t_size_t count );
-void		*ft_memcpy( void *destination, const void *source, t_size_t size );
-void		*ft_memccpy( void *destination, const void *source, int ch,
+void		*ft_memset(void *pointer, int value, t_size_t count);
+void		ft_bzero(void *pointer, t_size_t count);
+void		*ft_memcpy(void *destination, const void *source, t_size_t size);
+void		*ft_memccpy(void *destination, const void *source, int ch,
 				t_size_t maxSize);
-void		*ft_memmove( void *destination, const void *source, t_size_t size );
-void		*ft_memchr( const void *memory_block, int searched_char,
-				t_size_t size );
-int			ft_memcmp( const void *pointer1, const void *pointer2,
-				t_size_t size );
+void		*ft_memmove(void *destination, const void *source, t_size_t size);
+void		*ft_memchr(const void *memory_block, int searched_char,
+				t_size_t size);
+int			ft_memcmp(const void *pointer1, const void *pointer2,
+				t_size_t size);
 int			ft_strlen(char *str);
 char		*ft_strdup(const char *s1);
 char		*ft_strcpy(char *dest, char *src);
@@ -46,11 +46,12 @@ char		*ft_strnstr(char *str, char *to_find, t_size_t len);
 int			ft_strcmp(char *s1, char *s2);
 int			ft_strncmp(char *s1, char *s2, t_size_t n);
 int			ft_atoi(char *str);
-int			ft_isalpha(int c);
-int			ft_isdigit(int c);
-int			ft_isalnum(int c);
-int			ft_isascii( int c );
-int			ft_isprint( int c );
-int			ft_toupper( int c );
-int			ft_tolower( int c );
+int			ft_isalpha(int number);
+int			ft_isdigit(int number);
+int			ft_isalnum(int number);
+int			ft_isascii(int number);
+int			ft_isprint(int number);
+int			ft_toupper(int number);
+int			ft_tolower(int number);
+
 #endif
