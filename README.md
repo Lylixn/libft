@@ -46,3 +46,5 @@ The only difference is for build I use cmake instead of makefile.
 - ft_putchar
 - ft_putstr
 - ft_putnbr
+- ft_strjoin
+- ft_strsjoin
