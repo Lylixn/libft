@@ -55,6 +55,8 @@ int			ft_isprint(int character);
 int			ft_toupper(int number);
 int			ft_tolower(int number);
 
+char        *ft_itoa(int n);
+
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strsjoin(const char *str, ...);
 
